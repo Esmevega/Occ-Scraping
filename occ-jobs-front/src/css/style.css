@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Prop+Double&display=swap');
+
+.bitcount-text {
+  font-family: 'Bitcount Prop Double', sans-serif;
+}
+
+@import "tailwindcss";
