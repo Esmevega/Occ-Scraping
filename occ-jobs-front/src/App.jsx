@@ -55,7 +55,7 @@ function App() {
     
 
     try {
-      const response = await axios.post("http://localhost:3000/api/jobs", {
+      const response = await axios.post("http://occ-scraping-production.up.railway.app/api/jobs", {
         searchTerm,
       });
 
