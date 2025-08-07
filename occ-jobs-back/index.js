@@ -132,7 +132,7 @@ app.get("/api/stats", (req, res) => {
 });
 
 app.listen(PORT,'0.0.0.0', () => {
-  console.log(`✅ API corriendo en http://localhost:${PORT}`);
+  console.log(`✅ API corriendo en https://localhost:${PORT}`);
   console.log(`🗺️ Funcionalidad de mapas habilitada`);
   console.log(`📊 Endpoints disponibles:`);
   console.log(`   POST /api/jobs - Empleos completos`);
