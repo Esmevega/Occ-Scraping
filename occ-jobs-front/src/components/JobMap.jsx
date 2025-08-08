@@ -1,5 +1,17 @@
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import L from "leaflet";
+import MarkerIcon from "leaflet/dist/images/marker-icon.png";
+import MarkerShadow from "leaflet/dist/images/marker-shadow.png";
+import MarkerIcon2x from "leaflet/dist/images/marker-icon-2x.png";
+
+// Configuración para que los íconos se vean en producción (Vercel)
+delete L.Icon.Default.prototype._getIconUrl;
+L.Icon.Default.mergeOptions({
+  iconRetinaUrl: MarkerIcon2x,
+  iconUrl: MarkerIcon,
+  shadowUrl: MarkerShadow,
+});
 
 function JobMap({ jobs }) {
   const jobsConUbicacion = jobs.filter((job) => job.lat && job.lng);
