@@ -250,10 +250,11 @@ function App() {
       )}
     </div>
     
-    <div>
-      <Footer />
+    <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh",}}>
+      <div style={{flex: 1}}>
+        <Footer />
+      </div>
      </div>
-    
     </div>
   );
 }
