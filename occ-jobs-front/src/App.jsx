@@ -4,6 +4,7 @@ import Loader from "./components/Loader";
 import JobList from "./components/JobList";
 import JobMap from "./components/JobMap";
 import Acerca from "./components/acerca"
+import Footer from "./components/footer";
 import { Search } from "lucide-react";
 
 import {
@@ -248,6 +249,10 @@ function App() {
         </>
       )}
     </div>
+    <div>
+      <Footer />
+     </div>
+     
     </div>
     
   );
